@@ -1,0 +1,490 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #737373;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1094px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    height: 104px;
+}
+
+.header.active {
+    background-color: #00A0C1;
+}
+
+.landing-name {
+    font-size: 24px;
+    color: #252B42;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav-menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-list:hover {
+    color: #00A0C1;
+}
+
+.nav-list:active {
+    color: #006980;
+}
+
+.nav-list:not(:last-child) {
+    margin-right: 21px;
+}
+
+.nav-vector {
+    margin-left: 39px;
+}
+
+.nav-search {
+    margin-right: 18px;
+}
+
+.nav-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 0;
+}
+
+.nav-button:hover {
+    fill: #00A0C1;
+}
+
+.main {
+    height: 785px;
+    padding-top: 104px;
+    background-image: url(../img/agent-bg.png),
+        url(../img/bg-img.png);
+    background-position: right bottom, center;
+    background-repeat: no-repeat;
+    background-size: 744px 681px, cover;
+}
+
+.agent {
+    display: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 172px;
+    width: 509px;
+}
+
+.main-title {
+    font-size: 58px;
+    color: #252B42;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+}
+
+.main-description {
+    width: 378px;
+    font-size: 20px;
+    color: #737373;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    margin: 35px 0;
+}
+
+.main-buttons {
+    display: flex;
+}
+
+.main-button {
+    cursor: pointer;
+    padding: 10px 36px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition-duration: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 28px;
+    border-radius: 37px;
+}
+
+.btn-submit {
+    background-color: #00A0C1;
+    color: white;
+    border: 1px solid #00A0C1;
+    margin-right: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #068ba6;
+    color: white;
+}
+
+.btn-submit:active {
+    background-color: #055b6c;
+    color: white;
+}
+
+.btn-more {
+    background-color: transparent;
+    color: #00A0C1;
+    border: 1px solid #00A0C1;
+}
+
+.btn-more:hover {
+    background-color: #068ba6;
+    color: white;
+}
+
+.btn-more:active {
+    background-color: #055b6c;
+    color: white;
+}
+
+
+/*======================================= Section-2 =======================================*/
+
+
+.choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.choose {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    color: #252B42;
+}
+
+.choose-problems {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.choose-blocks {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.choose-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 16px;
+    width: 30%;
+    height: 142px;
+    padding: 30px 10px;
+    background-color: #F9F9F9;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.choose-block:not(:last-child) {
+    margin-right: 32px;
+}
+
+.choose-block:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    background-color: #00A0C1;
+    color: #fff;
+}
+
+.bgrowing-img-container {
+    min-height: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.bgrowing-white-img {
+    display: none;
+}
+
+.choose-block:hover .bgrowing-white-img {
+    display: block;
+}
+
+.choose-block:hover .bgrowing-img {
+    display: none;
+}
+
+.bgrowing {
+    margin: 10px 0;
+}
+
+
+/*======================================= Section-3 =======================================*/
+
+
+.practice {
+    background-color: #fafafa;
+}
+
+.practice-advice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+}
+
+.practice-main {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    color: #252B42;
+}
+
+.practice-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.practice-blocks {
+    display: flex;
+    align-items: stretch;
+    text-align: left;
+    justify-content: space-between;
+    margin-top: 45px;
+    padding-bottom: 80px;
+}
+
+.practice-block {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    background-color: #fff;
+}
+
+.practice-img {
+    margin-top: auto;
+    background-color: #F9F9F9;
+}
+
+.practice-head {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252B42;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.practice-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+    padding: 15px 30px 30px;
+    margin: 0;
+}
+
+
+/*======================================= Section-4 =======================================*/
+
+
+.business-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.business-head {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    color: #252B42;
+}
+
+.business-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+    padding-bottom: 50px;
+}
+
+.business-promo {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+/*======================================= VIDEO =======================================*/
+
+.business-video {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    margin-right: 120px;
+}
+
+.bus-photo {
+    width: 600px;
+    height: 442px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.bus-photo:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.bus-video {
+    display: none;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+    width: 600px;
+    height: 442px;
+}
+
+/*======================================= VIDEO END =======================================*/
+
+.people-head {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252B42;
+}
+
+.business-speed {
+    display: flex;
+}
+
+.business-result {
+    flex-direction: column;
+}
+
+.business-speed:not(:last-child) .business-result {
+    padding-bottom: 30px;
+}
+
+.business-icons {
+    padding-right: 20px;
+}
+
+.people-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+    margin: 0;
+}
+
+
+/*======================================= Section-5 =======================================*/
+
+
+.brand-list {
+    background-color: #fafafa;
+    height: 340px;
+    position: relative;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 175px;
+}
+
+.brand-bg {
+    width: 100%;
+    height: 80px;
+    background-color: #252B42;
+    position: absolute;
+    bottom: 0;
+}
